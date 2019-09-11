@@ -1,10 +1,13 @@
 # Base-Node-Js
 
 Repo ini merupakan base dasar nodejs, menggunakan package :
-* yarn
-* nodemon
-* dotenv
-* express
+* [yarn For Package Manager](https://github.com/yarnpkg/yarn)
+* [Express For web Servers](https://github.com/expressjs/express)
+* [Helmet For Security](https://github.com/helmetjs/helmet)
+* [Body-Parser For Parsing JSON Body](https://github.com/expressjs/body-parser)
+* [dotenv For Save ENV Config](https://github.com/motdotla/dotenv)
+* [Nodemon For Tracking Change](https://github.com/remy/nodemon)
+* [Axios For HTTP Request](https://github.com/axios/axios)
 
 # Install NodeJS dan Yarn di Ubuntu
 
@@ -26,6 +29,23 @@ sudo apt-get update && sudo apt-get install yarn
 # Start
 * Clone Repo ini ke Local Komputer Anda
 * Rubah file `.env.example` ke `.env`
+* Install Dependencies : `yarn install`
 * Jalankan Command :  `yarn dev`
 * Akses melalui `http://127.0.0.1:8001` atau `http://localhost:8001`
 * Enjoy with NodeJS
+
+# Table Route
+| URL                               | TYPE | Fields                  |
+| --------------------------------- | ---- | ----------------------- |
+| http://localhost:8001/            | GET  | -                       |
+| http://localhost:8001/hello       | GET  | -                       |
+| http://localhost:8001/world       | GET  | -                       |
+| http://localhost:8001/post/create | POST | `post`                  |
+| http://localhost:8001/check       | POST | -                       |
+| http://localhost:8001/httppost    | POST | `firstname`, `lastname` |
+
+# Screenshoot
+![post-create.png](/image/post-create.png)
+![post-id.png](/image/post-id.png)
+![axios-check.png](/image/axios-check.png)
+![httpost.png](/image/httppost.png)
